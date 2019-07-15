@@ -6,7 +6,7 @@
   </property>
   <property>
     <name>javax.jdo.option.ConnectionURL</name>
-    <value>jdbc:mysql://10.30.160.85:3306/hive?createDatabaseIfNotExist=true</value>
+    <value>jdbc:mysql://192.168.44.60:3306/hive?createDatabaseIfNotExist=true</value>
   </property>
   <property>
     <name>javax.jdo.option.ConnectionDriverName</name>
