@@ -16,4 +16,8 @@
     <name>javax.jdo.option.ConnectionUserName</name>
     <value>root</value>
   </property>
+  <property>
+    <name>javax.jdo.option.ConnectionPassword</name>
+    <value>123456</value>
+  </property>
 </configuration>

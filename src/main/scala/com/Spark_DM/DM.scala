@@ -16,7 +16,7 @@ object DM {
     //System.setProperty("hadoop.home.dir", "D:\\Huohu\\下载\\hadoop-common-2.2.0-bin-master")
     //val conf = new SparkConf().setAppName(Constan.SPARK_APP_NAME_USER).setMaster(Constan.SPARK_LOACL)
     //val sc = new SparkContext(conf)
-    val sc = SparkSession.builder().appName(Constan.SPARK_APP_NAME_USER).master(Constan.SPARK_LOACL).config("spark.debug.maxToStringFields","100").getOrCreate()
+    val sc = SparkSession.builder().enableHiveSupport().appName(Constan.SPARK_APP_NAME_USER).master(Constan.SPARK_LOACL).config("spark.debug.maxToStringFields","100").getOrCreate()
     //val hiveContext = new HiveContext(sc)
     // 加载相应的语句
     val sql = ConfigManager.getProper(args(0))
